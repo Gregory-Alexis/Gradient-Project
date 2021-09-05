@@ -2,7 +2,7 @@ import Gradient from "./Gradient"
 import { useGradient } from "../context/GradientsContext"
 
 const GradientsList = () => {
-	const { gradients, filter, active, page } = useGradient()
+	const { gradients, filter, active } = useGradient()
 
 	const list = gradients.filter((el) => {
 		if (filter === "all") {
